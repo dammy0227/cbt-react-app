@@ -1,0 +1,7 @@
+.flex{ 
+    background-color: rgb(8, 8, 29);
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

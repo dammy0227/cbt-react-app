@@ -1,0 +1,110 @@
+/* General Styling */
+.result {
+    background-color: white;
+    height: auto;
+    width: 90vw;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Hide scrollbar for a cleaner look */
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+/* Score and Button Section */
+.result-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(34, 34, 68);
+    margin-bottom: 10px;
+}
+
+/* Retake Exam Button */
+.btn-result {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-retake {
+    padding: 12px 15px;
+    background-color: rgb(34, 34, 68);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-retake:hover {
+    background-color: rgb(28, 28, 58);
+}
+
+/* Answer Section */
+.answer {
+    color: rgb(34, 34, 68);
+}
+
+.answer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.answer div {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid rgb(34, 34, 68);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .result {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    .score {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-retake {
+        font-size: 14px;
+        padding: 10px 12px;
+        width: 100%;
+    }
+
+    .answer div {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .score {
+        font-size: 18px;
+    }
+
+    .btn-retake {
+        font-size: 14px;
+    }
+
+    .answer h3 {
+        font-size: 18px;
+    }
+}
