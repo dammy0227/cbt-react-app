@@ -21,7 +21,7 @@ const ExamDashboard = ({ finishExam, resetExam }) => {
     };
 
     const handleSubmit = () => {
-        axios.post('http://localhost:4000/api/exam/submit', { answers })
+        axios.post('http://cbt-node-app.vercel.app/localhost:4000/api/exam/submit', { answers })
             .then(res => finishExam(res.data))
             .catch(err => console.error(err));
     };
